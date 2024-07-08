@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <div><input placeholder="Enter"></div>
+    <div class="calculator-row">
+      <div><button onclick="cal+='1';show(cal) ">1</button></div>
+      <div><button onclick="cal+='2';show(cal) ">2</button></div>
+      <div><button onclick="cal+='3';show(cal) ">3</button></div>
+      <div><button onclick="cal+='+';show(cal) ">+</button></div>
+    </div>
+    <div class="calculator-row">
+      <div><button onclick="cal+='4';show(cal) ">4</button></div>
+      <div><button onclick="cal+='5';show(cal) ">5</button></div>
+      <div><button onclick="cal+='6';show(cal) ">6</button></div>
+      <div><button onclick="cal+='-';show(cal) ">-</button></div>
+    </div>
+    <div class="calculator-row">
+      <div><button onclick="cal+='7';show(cal) ">7</button></div>
+      <div><button onclick="cal+='8';show(cal) ">8</button></div>
+      <div><button onclick="cal+='9';show(cal) ">9</button></div>
+      <div><button onclick="cal+='*';show(cal) ">*</button></div>
+    </div>
+    <div class="calculator-row">
+      <div><button onclick="cal+='0';show(cal) ">0</button></div>
+      <div><button onclick="cal+='.';show(cal) ">.</button></div>
+      <div><button onclick="cal=eval(cal);show(cal)"" >=</button></div>
+      <div><button onclick="cal+='/';show(cal) ">/</button></div>
+    </div>
+    <div class="calculator-row">
+      <button onclick="cal=''; show(cal)" style="width: 70px;">Clear</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
